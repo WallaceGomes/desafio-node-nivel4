@@ -10,17 +10,16 @@ import IOrdersRepository from '@modules/orders/repositories/IOrdersRepository';
 import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersRepository';
 
 container.registerSingleton<ICustomersRepository>(
-  'CustomerRepository',
+  'CustomersRepository',
   CustomersRepository,
 );
 
 container.registerSingleton<IProductsRepository>(
-  'CustomerRepository',
+  'ProductsRepository',
   ProductsRepository,
 );
 
 container.registerSingleton<IOrdersRepository>(
-  'CustomerRepository',
+  'OrdersRepository',
   OrdersRepository,
 );
-
